@@ -1,8 +1,7 @@
 <?php
     echo '<html>';
 
-    $cities = ['6401', '3357', '6711', '6589',
-          '6249', '6224', '6472', '6994', '6573', '5615', '6584'];
+    $cities = ['6401', '3357', '6711'];
 
     $url = 'http://apiadvisor.climatempo.com.br/api-manager/user-token/'.TOKEN.'/locales';
 
