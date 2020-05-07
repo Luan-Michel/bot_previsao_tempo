@@ -1,4 +1,6 @@
 <?php
+    define('TOKEN', getenv('TOKEN'));
+
     echo '<html>';
 
     $cities = ['6401', '3357', '6711'];
