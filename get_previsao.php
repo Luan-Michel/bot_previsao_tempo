@@ -2,12 +2,11 @@
     
     define('TOKEN', getenv('CT_TOKEN'));
 
-    $cities = ['6401', '3357', '6711'];
-    
     function getPrevisao(){
-
+        
         echo '<html>';
-    
+        
+        $cities = ['6401', '3357', '6711'];
     
         $url = 'http://apiadvisor.climatempo.com.br/api-manager/user-token/'.TOKEN.'/locales';
     
