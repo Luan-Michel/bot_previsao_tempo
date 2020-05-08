@@ -19,7 +19,7 @@
                     '! Eu sou um bot que informa a previsão do tempo', 'reply_markup' => array(
                     'keyboard' => array(array('Previsão')),
                     'one_time_keyboard' => true)));
-            } else if ($text === "Previsao") {
+            } else if ($text === "Previsão") {
                 sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => 'Escolha de qual cidade você deseja receber a previsão.', 
                     'reply_markup' => array(
                     'keyboard' => array(array('Ponta Grossa', 'Castro', 'Carambeí', 'Jaguariaíva'), 
