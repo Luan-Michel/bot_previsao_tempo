@@ -28,29 +28,84 @@
                     'one_time_keyboard' => true)));
 
             } else if ($text === "Ponta Grossa") {
-                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6401')));
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6401'),
+                            'reply_markup' => array(
+                            'keyboard' => array(array('Ponta Grossa', 'Castro', 'Carambeí', 'Jaguariaíva'), 
+                                                array('Tibagi', 'Telêmaco Borba', 'Reserva', 'Irati'),
+                                                array('Ipiranga', 'Prudentópolis', 'Ivaí', 'Todas')),
+                            'one_time_keyboard' => true)));
             } else if ($text === "Castro") {
-                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('3357')));
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('3357'),
+                            'reply_markup' => array(
+                            'keyboard' => array(array('Ponta Grossa', 'Castro', 'Carambeí', 'Jaguariaíva'), 
+                                                array('Tibagi', 'Telêmaco Borba', 'Reserva', 'Irati'),
+                                                array('Ipiranga', 'Prudentópolis', 'Ivaí', 'Todas')),
+                            'one_time_keyboard' => true)));
             } else if ($text === "Carambeí") {
-                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6711')));
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6711'),
+                            'reply_markup' => array(
+                            'keyboard' => array(array('Ponta Grossa', 'Castro', 'Carambeí', 'Jaguariaíva'), 
+                                                array('Tibagi', 'Telêmaco Borba', 'Reserva', 'Irati'),
+                                                array('Ipiranga', 'Prudentópolis', 'Ivaí', 'Todas')),
+                            'one_time_keyboard' => true)));
             } else if ($text === "Jaguariaíva") {
-                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6589')));
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6589'),
+                            'reply_markup' => array(
+                            'keyboard' => array(array('Ponta Grossa', 'Castro', 'Carambeí', 'Jaguariaíva'), 
+                                                array('Tibagi', 'Telêmaco Borba', 'Reserva', 'Irati'),
+                                                array('Ipiranga', 'Prudentópolis', 'Ivaí', 'Todas')),
+                            'one_time_keyboard' => true)));
             } else if ($text === "Tibagi") {
-                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6249')));
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6249'),
+                            'reply_markup' => array(
+                            'keyboard' => array(array('Ponta Grossa', 'Castro', 'Carambeí', 'Jaguariaíva'), 
+                                                array('Tibagi', 'Telêmaco Borba', 'Reserva', 'Irati'),
+                                                array('Ipiranga', 'Prudentópolis', 'Ivaí', 'Todas')),
+                            'one_time_keyboard' => true)));
             } else if ($text === "Telêmaco Borba") {
-                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6224')));
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6224'),
+                            'reply_markup' => array(
+                            'keyboard' => array(array('Ponta Grossa', 'Castro', 'Carambeí', 'Jaguariaíva'), 
+                                                array('Tibagi', 'Telêmaco Borba', 'Reserva', 'Irati'),
+                                                array('Ipiranga', 'Prudentópolis', 'Ivaí', 'Todas')),
+                            'one_time_keyboard' => true)));
             } else if ($text === "Reserva") {
-                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6472')));
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6472'),
+                            'reply_markup' => array(
+                            'keyboard' => array(array('Ponta Grossa', 'Castro', 'Carambeí', 'Jaguariaíva'), 
+                                                array('Tibagi', 'Telêmaco Borba', 'Reserva', 'Irati'),
+                                                array('Ipiranga', 'Prudentópolis', 'Ivaí', 'Todas')),
+                            'one_time_keyboard' => true)));
             } else if ($text === "Irati") {
-                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6994')));
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6994'),
+                            'reply_markup' => array(
+                            'keyboard' => array(array('Ponta Grossa', 'Castro', 'Carambeí', 'Jaguariaíva'), 
+                                                array('Tibagi', 'Telêmaco Borba', 'Reserva', 'Irati'),
+                                                array('Ipiranga', 'Prudentópolis', 'Ivaí', 'Todas')),
+                            'one_time_keyboard' => true)));
             } else if ($text === "Ipiranga") {
-                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6573')));
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6573'),
+                            'reply_markup' => array(
+                            'keyboard' => array(array('Ponta Grossa', 'Castro', 'Carambeí', 'Jaguariaíva'), 
+                                                array('Tibagi', 'Telêmaco Borba', 'Reserva', 'Irati'),
+                                                array('Ipiranga', 'Prudentópolis', 'Ivaí', 'Todas')),
+                            'one_time_keyboard' => true)));
             } else if ($text === "Prudentópolis") {
-                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('5615')));
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('5615'),
+                            'reply_markup' => array(
+                            'keyboard' => array(array('Ponta Grossa', 'Castro', 'Carambeí', 'Jaguariaíva'), 
+                                                array('Tibagi', 'Telêmaco Borba', 'Reserva', 'Irati'),
+                                                array('Ipiranga', 'Prudentópolis', 'Ivaí', 'Todas')),
+                            'one_time_keyboard' => true)));
             } else if ($text === "Ivaí") {
-                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6584')));
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6584'),
+                            'reply_markup' => array(
+                            'keyboard' => array(array('Ponta Grossa', 'Castro', 'Carambeí', 'Jaguariaíva'), 
+                                                array('Tibagi', 'Telêmaco Borba', 'Reserva', 'Irati'),
+                                                array('Ipiranga', 'Prudentópolis', 'Ivaí', 'Todas')),
+                            'one_time_keyboard' => true)));
             } else {
-                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => 'Desculpe, não entendi o que disse.'));
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => 'Desculpe, não entendi o que disse (a opção Todas não está funcionando).'));
             }
 
         } else {
