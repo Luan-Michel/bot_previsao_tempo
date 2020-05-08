@@ -4,7 +4,7 @@
 
     function getPrevisao(){
         
-        echo '<html>';
+        $message = '';
         
         $cities = ['6401', '3357', '6711'];
     
@@ -44,7 +44,7 @@
     
             $min_temp = 0;
             $max_temp = 0;
-            echo $previsao->name;
+            $message .= $previsao->name.'\n';
             
             $cont = 0;
             
@@ -63,20 +63,18 @@
                 }
                 if ($cont == 23){
                     $cont = 0;
-                    echo '<br>';
-                    echo date('d/m/Y', $timestamp);
-                    echo '<br>'.$min_temp.' '.$max_temp;
+                    $message .= date('d/m/Y', $timestamp).'\n';
+                    $message .= $min_temp.' '.$max_temp.'\n';
                 }else{
                     $cont+=1;
                 }
             }
-            echo '<br>';
-            echo '<br>';
+            $message .= '\n';
     
             sleep(6);
     
         }
-        echo '</html>';
+        return $message;
     }
 
 ?>

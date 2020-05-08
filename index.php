@@ -2,6 +2,6 @@
  
     include 'get_previsao.php';
 
-    getPrevisao();
+    echo getPrevisao();
 
 ?>
