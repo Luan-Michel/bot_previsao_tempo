@@ -15,12 +15,25 @@
 
             if (strpos($text, "/start") === 0) {
                 //envia a mensagem ao usuário
-            sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => 'Olá, '. $message['from']['first_name'].
-                '! Eu sou um bot que informa a previsão do tempo', 'reply_markup' => array(
-                'keyboard' => array(array('Previsao')),
-                'one_time_keyboard' => true)));
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => 'Olá, '. $message['from']['first_name'].
+                    '! Eu sou um bot que informa a previsão do tempo', 'reply_markup' => array(
+                    'keyboard' => array(array('Previsao')),
+                    'one_time_keyboard' => true)));
             } else if ($text === "Previsao") {
-                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getPrevisao('previsao', $text)));
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => 'Escolha de qual 
+                    cidade você deseja receber a previsão.', 'reply_markup' => array(
+                    'keyboard' => array(array('Ponta Grossa', 'Castro'), array('Carambeí')),
+                    'one_time_keyboard' => true)));
+
+            } else if ($text === "Ponta Grossa") {
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6401')));
+
+            } else if ($text === "Castro") {
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('3357')));
+
+            } else if ($text === "Carambeí") {
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getCity('6711')));
+
             }
 
         } else {
