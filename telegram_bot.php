@@ -20,7 +20,7 @@
                 'keyboard' => array(array('Previsao')),
                 'one_time_keyboard' => true)));
             } else if ($text === "Previsao") {
-                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => urlencode(getPrevisao('previsao', $text))));
+                sendMessage("sendMessage", array('chat_id' => $chat_id, "text" => getPrevisao('previsao', $text)));
             }
 
         } else {

@@ -44,7 +44,7 @@
     
             $min_temp = 0;
             $max_temp = 0;
-            $message .= $previsao->name.'\n';
+            $message .= $previsao->name."\n";
             
             $cont = 0;
             
@@ -63,13 +63,13 @@
                 }
                 if ($cont == 23){
                     $cont = 0;
-                    $message .= date('d/m/Y', $timestamp).'\n';
-                    $message .= $min_temp.' '.$max_temp.'\n';
+                    $message .= date('d/m/Y', $timestamp)."\n";
+                    $message .= $min_temp.' '.$max_temp."\n";
                 }else{
                     $cont+=1;
                 }
             }
-            $message .= '\n';
+            $message .= "\n";
     
             sleep(6);
     
