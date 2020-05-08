@@ -73,7 +73,7 @@
             if ($cont == 23){
                 $cont = 0;
                 $message .= date('d/m', $timestamp)."\n";
-                $message .= 'min: '.min_temp."\nmax: ".$max_temp."\n";
+                $message .= 'min: '.$min_temp."\nmax: ".$max_temp."\n";
             }else{
                 $cont+=1;
             }
